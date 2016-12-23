@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "lint": "./node_modules/.bin/eslint routes app.js config.js index.js",
+    "lint": "eslint routes app.js config.js index.js",
     "fix": "eslint --fix routes/. app.js config.js index.js; exit 0"
   },
   "author": "Alex Adusei",
