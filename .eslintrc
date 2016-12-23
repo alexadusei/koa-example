@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint:recommended", "standard"],
+  "rules": {
+    "no-console": [2, {allow: ["warn", "error", "log"]}],
+    "comma-dangle": [2, "always-multiline"]
+  }
+}
