@@ -1,4 +1,5 @@
 import Koa from 'koa'
+import cors from 'kcors'
 import logger from 'koa-logger'
 
 import config from './config'
@@ -7,6 +8,7 @@ import userRoutes from './routes/user'
 
 const app = new Koa()
 
+app.use(cors())
 app.use(logger())
 app.use(mainRoutes.routes())
 app.use(userRoutes.routes())
